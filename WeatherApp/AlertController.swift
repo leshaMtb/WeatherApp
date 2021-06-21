@@ -19,66 +19,11 @@ extension ViewController {
             textField.placeholder = "Город"
             
         }
-            
+        
         alertcontroller.addAction(cancelButton)
         alertcontroller.addAction(searchbutton)
-       
+        
         present(alertcontroller, animated: true, completion: nil)
     }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        /*let alertcontroller = UIAlertController( title: title, message: message, preferredStyle: style)
-         alertcontroller.addTextField{ tf in
-            let citties = ["San Francisco", "Moscow", "New York", "Stanmul", "Vienna" ]
-            tf.placeholder = citties.randomElement()
-            }
- 
-        
-        let search = UIAlertAction(title: "Search", style: .default) { action in
-            let textfield = alertcontroller.textFields?.first
-            guard let cityName = textfield?.text else {return}
-           
-            if cityName != "" {
-             self.networkWeather.currentWeather(forCity: cityName)
-                let city = cityName.split(separator: " ").joined(separator: "%20")
-                complitionHandler(cityName)
-            }
-    }
-        let cancel = UIAlertAction(title: "cancel", style: .cancel, handler: nil)
-        alertcontroller.addAction(search)
-        alertcontroller.addAction(cancel)
-    present(alertcontroller,animated: true, completion: nil)
-} */
-        
-        
-        
-        
 }
 

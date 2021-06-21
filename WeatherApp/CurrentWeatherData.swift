@@ -14,13 +14,8 @@ struct CurrentWeatherData: Decodable {
 
 struct Main: Decodable {
     let temp: Double
-    let feels_like: Double
-    
-    // меняю снейк_кейс на кэмелКейс
-     /* enum CodingCase: String,CodingKey{
-       case temp
-       case feelsLike = "feels_like"
-    }*/
+    let feelsLike: Double
+
 }
 
 struct Weather: Decodable {
