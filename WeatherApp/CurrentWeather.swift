@@ -32,13 +32,12 @@ struct CurrentWeather{
         case 801...804: return "cloud.fill"
         default: return "nosign"
         }
-        
     }
     
-    init?(currntWeatherData: CurrentWeatherData) {
-        cityName = currntWeatherData.name
-        temperature = currntWeatherData.main.temp
-        feelslikeTemperature = currntWeatherData.main.feelsLike
-        conditionCode = currntWeatherData.weather.first!.id
+    init?(currentWeatherData: CurrentWeatherData) {
+        cityName = currentWeatherData.name
+        temperature = currentWeatherData.main.temp
+        feelslikeTemperature = currentWeatherData.main.feelsLike
+        conditionCode = currentWeatherData.weather.first!.id
     }
 }
